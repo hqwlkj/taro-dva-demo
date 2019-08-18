@@ -50,17 +50,16 @@ class App extends Component {
   private jumped = false;
 
   componentWillMount(): void {
-    const host = 'https://mp.secrecoffee.com/app/pegasus-api-master/api';
+    let host: string = ''; // 服务器地址
+    if (process.env.NODE_ENV === 'development') {
+      host = 'http://loaclhost:8080/'; // 测试环境服务器地址
+    } else {
+      host = 'http://127.0.0.1:8080/'; // 生产环境服务器地址
+    }
 
     const interceptor = chain => {
       const requestParams = chain.requestParams;
       if (!/^(http|\/\/)/.test(requestParams.url)) {
-        // console.log(store.backDoor.password);
-        // if (store.backDoor.password === '1') {
-        //   host = 'https://mp.secrecoffee.com/app/pegasus-api-master/api';
-        // } else {
-        //   host = 'https://mp.secrecoffee.com/app/pegasus-api-master/api-staging';
-        // }
         requestParams.url = host + requestParams.url;
       }
       const token = storage.get('token');
