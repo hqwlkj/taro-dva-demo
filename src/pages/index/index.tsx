@@ -68,22 +68,22 @@ class Index extends Component {
 
   add() {
     // @ts-ignore
-    const { dispatch } = this.props;
+    const { dispatch, count } = this.props;
     dispatch({
       type: 'home/add',
       payload: {
-        count: 5
+        count: count + 1
       }
     })
   }
 
   dec() {
     // @ts-ignore
-    const { dispatch } = this.props;
+    const { dispatch, count } = this.props;
     dispatch({
       type: 'home/dec',
       payload: {
-        count: 0
+        count: count - 1
       }
     })
   }

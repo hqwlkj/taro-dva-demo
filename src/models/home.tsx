@@ -16,6 +16,15 @@ export default {
         }
       })
     },
+    * dec({ payload }, { put }) {
+      // yield call(queryDownLoadRank, payload);
+      yield put({
+        type: 'saveData',
+        payload: {
+          ...payload
+        }
+      })
+    },
     * asyncAdd({ payload }, { put, select }) {
       const { count } = yield select(state => state.home);
       yield put({
