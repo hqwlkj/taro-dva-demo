@@ -1,7 +1,7 @@
 {
 	"miniprogramRoot": "dist/",
 	"projectname": "weapp",
-	"description": "粮果惠社区优选微信小程序、支付宝小程序、h5app、RNApp等",
+	"description": "taro-dva-demo",
 	"appid": "touristappid",
 	"setting": {
 		"urlCheck": true,
