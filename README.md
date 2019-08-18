@@ -1,4 +1,5 @@
-# TaroDvaDemo
+# taro-dva-demo
+
 [![Build With Taro](https://img.shields.io/badge/build%20with-Taro-028fe4.svg?style=flat-square)](https://github.com/NervJS/taro/)
 [![Build With dva](https://img.shields.io/badge/build%20with-dva-028fe4.svg?style=flat-square)](https://dvajs.com/)
 
@@ -22,7 +23,7 @@
 
 ```
 
-git clone https://github.com/hqwlkj/TaroDvaDemo.git my-weapp
+git clone https://github.com/hqwlkj/taro-dva-demo.git my-weapp
 
 cd my-weapp
 
@@ -72,5 +73,5 @@ cd my-weapp
 
 我们非常欢迎你的贡献，你可以通过以下方式和我一起共建 :smiley:：
 
-- 通过 [Issue](https://github.com/hqwlkj/TaroDvaDemo/issues) 报告 bug 或进行咨询。
-- 提交 [Pull Request](https://github.com/hqwlkj/TaroDvaDemo/pulls) 改进代码。
+- 通过 [Issue](https://github.com/hqwlkj/taro-dva-demo/issues) 报告 bug 或进行咨询。
+- 提交 [Pull Request](https://github.com/hqwlkj/taro-dva-demo/pulls) 改进代码。
