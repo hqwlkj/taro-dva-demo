@@ -66,7 +66,7 @@ class Index extends Component {
   componentDidHide() {
   }
 
-  add() {
+  add = () => {
     // @ts-ignore
     const { dispatch, count } = this.props;
     dispatch({
@@ -77,7 +77,7 @@ class Index extends Component {
     })
   }
 
-  dec() {
+  dec = () => {
     // @ts-ignore
     const { dispatch, count } = this.props;
     dispatch({
